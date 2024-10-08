@@ -52,7 +52,63 @@
           </select>
     </div>
     <div class="text-center">
-        <button type="submit" class="btn btn-primary">Réserver</button>
-        <button type="button" class="btn btn-danger">Annuler</button>
+        <button type="submit" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#ConfirmReservationLabel">Réserver</button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeleteReservationLabel">Annuler</button>
     </div>
 </form>
+
+<div class="modal fade" id="DeleteReservationLabel" tabindex="-1" aria-labelledby="DeleteReservationLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="DeleteReservationLabel">Annuler la réservation</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="mb-3">
+              <p>Souhaitez vous annuler votre reservation ?</p>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ConfirmDeleteReservationLabel">Valider</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ConfirmDeleteReservationLabel" tabindex="-1" aria-labelledby="ConfirmDeleteReservationLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="ConfirmDeleteReservationLabel">Votre réservation a bien été supprimée</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="text-center">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ConfirmReservationLabel" tabindex="-1" aria-labelledby="ConfirmReservationLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="ConfirmReservationLabel">Votre réservation a bien été prise en compte</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="text-center">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
