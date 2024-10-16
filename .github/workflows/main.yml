@@ -24,9 +24,9 @@ jobs:
         password: ${{ secrets.ftp_password }}
         protocol: ftps
         exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/bootstrap/scss/**
-          **/node_modules/bootstrap/js/**
-          **/node_modules/bootstrap-icons/icons/**
+          ./.git
+          ./.git./
+          ./node_modules/bootstrap/scss/
+          ./node_modules/bootstrap/js/
+          ./node_modules/bootstrap-icons/icons/
         server-dir: /www/
